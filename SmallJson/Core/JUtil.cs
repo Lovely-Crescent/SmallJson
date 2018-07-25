@@ -241,7 +241,7 @@ namespace SmallJson
             }
             if (typeof(DateTime) == targetType)
             {
-                return DateTime.Parse("yyyy-MM-ddTHH:mm:ss.FFFFFFFK");
+                return DateTime.Parse(str);
             }
             if (typeof(Guid) == targetType)
             {

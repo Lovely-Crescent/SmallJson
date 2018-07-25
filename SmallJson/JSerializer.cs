@@ -188,7 +188,7 @@ namespace SmallJson
             {
                 if (typeof(DateTime) == obj.GetType())
                 {
-                    return new JValue(ValueType.STRING, ((DateTime)obj).ToString("yyyy-MM-ddTHH:mm:ss.FFFFFFFK"));
+                    return new JValue(ValueType.STRING, ((DateTime)obj).ToString("yyyy-MM-dd HH:mm:ss.fff"));
                 }
                 if(typeof(string) == obj.GetType())
                 {
